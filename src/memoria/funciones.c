@@ -1,7 +1,8 @@
 int cantidadPaginasPorPrograma(int iTamProg, int iTamPag){
+	// Obtengo la cantidad de paginas que debera tener el programa
 	int iCant = iTamProg/iTamPag;
 	if(iTamProg%iTamPag!=0){
-		iCant++;//agrego una pagina mas para lo que resta
+		iCant++;
 	}
 	return iCant;
 }
