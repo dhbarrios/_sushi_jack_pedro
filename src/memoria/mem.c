@@ -3,7 +3,7 @@ void inicializarMemoriaPrincipal(int iCantPag, int iTamPag){
 	char *bits_bitMap = malloc(sizeof(char)*iCantPag);
 	int i;
 
-	logDebug("Creando memoria principal de tamanio %d\n", iCantPag*iTamPag);
+	logDebug("== Inicializando Memoria Principal: %d bytes\n", iCantPag*iTamPag);
 
 	for(i=0;i<iCantPag;i++){
 		bits_bitMap[i]=0;
