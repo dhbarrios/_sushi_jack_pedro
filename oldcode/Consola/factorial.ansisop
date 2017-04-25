@@ -1,0 +1,30 @@
+#!/usr/bin/Consola
+begin
+variables a, b
+	a = 4
+	b <- factorial a
+	print b
+end
+
+function factorial
+	variables f
+	f = $0 - 1
+	jz f fin
+    f <- factorial f
+    f <- multiplicar f,$0
+    return f
+    :fin
+    f = 1
+    return f
+end
+
+function multiplicar
+	variables s, i
+	i = $0
+	s = 0
+	:inicio
+	s = s + $1
+	i = i - 1
+	jnz i inicio
+	return s
+end

@@ -1,0 +1,11 @@
+#!/usr/bin/Consola
+begin	
+	:etiqueta
+	textPrint Ejecutando io Disco 5
+	io Disco 5
+	textPrint Ejecutando io Impresora 5
+	io Impresora 5
+	textPrint Ejecutando io Scanner 5
+	io Scanner 5
+	goto etiqueta
+end

@@ -1,0 +1,24 @@
+#!/usr/bin/Consola
+begin
+	variables a, b
+	a = 3
+	b = 5
+	a = b + 12
+	io Disco 5
+	a <- doble b
+	textPrint La variable a vale
+	print a
+end
+
+function doble
+	variables f
+    f = $0 + $0
+    f <- doble2 f
+    return f
+end
+
+function doble2
+	variables f
+    f = $0 + $0
+    return f
+end
